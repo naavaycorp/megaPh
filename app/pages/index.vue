@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1 class="text-5xl text-red-500">Welcome to the Index Page megaPh</h1>
-    <p class="text-green-500">
+    <h1 class="text-5xl text-green-500">Welcome to the Index Page megaPh</h1>
+    <p class="text-sky-500">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veniam,
       reiciendis laborum sequi nostrum aliquam ad et quam obcaecati sint quidem
       odit dolore vero perferendis amet cupiditate accusantium quod sunt
