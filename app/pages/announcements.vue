@@ -9,7 +9,7 @@ definePageMeta({ layout: "custom" });
         <article
           class="prose lg:prose-sm col-span-1 rounded-lg shadow-lg p-4 hover:shadow-xl transition-shadow duration-300"
         >
-          <NuxtLink to="/">
+          <NuxtLink to="/announcement">
             <nuxt-img
               src="/img/megaphone.jpg"
               alt="Announcements Banner"

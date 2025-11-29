@@ -37,7 +37,7 @@ onUnmounted(() => {
             class="py-2 pr-4 pl-4 border border-teal-300 rounded-md w-64"
           />
           <NuxtLink
-            to="/create-announcement"
+            to="/createAnnouncement"
             class="px-4 py-2 bg-teal-500 hover:bg-teal-600 rounded-md text-teal-50 text-sm"
             >Create</NuxtLink
           >
@@ -118,7 +118,7 @@ onUnmounted(() => {
           />
 
           <NuxtLink
-            to="/create-announcement"
+            to="/createAnnouncement"
             class="w-full block text-center px-4 py-2 bg-teal-500 hover:bg-teal-600 rounded-md text-teal-50"
           >
             Create Announcement
