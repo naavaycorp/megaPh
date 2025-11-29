@@ -21,3 +21,16 @@ model User {
   createdAt DateTime @default(now())
   updatedAt DateTime
 }
+
+model Announcement {
+  id        Int       @id @default(autoincrement())
+  title     String
+  excerpt   String?
+  body      Json?
+  date      DateTime?
+  author    String?
+  reading   String?
+  validity  String?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
