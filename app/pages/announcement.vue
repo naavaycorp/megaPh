@@ -3,15 +3,19 @@ definePageMeta({ layout: "custom" });
 </script>
 
 <template>
-  <main class="container mx-auto px-4 py-6 grid grid-cols-2 gap-8">
+  <main
+    class="container mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8"
+  >
     <section>
-      <div class="flex flex-col gap-y-4">
+      <div class="flex flex-col gap-y-4 order-2 md:order-1">
         <nuxt-img
           src="/img/megaphone.jpg"
           alt="Notifications Banner"
-          class="rounded-lg shadow-md mb-6 mx-auto"
+          class="rounded-lg shadow-md mb-6 mx-auto w-full md:w-auto"
         />
-        <h2 class="text-2xl font-bold text-teal-600">Hackathan 2024</h2>
+        <h2 class="text-xl sm:text-2xl font-bold text-teal-600">
+          Hackathan 2024
+        </h2>
         <p class="text-gray-700 leading-relaxed text-justify">
           Join us for an exciting Hackathon event where innovation meets
           creativity! Collaborate with like-minded individuals, showcase your
@@ -70,15 +74,19 @@ definePageMeta({ layout: "custom" });
       </p>
 
       <div>
-        <h2 class="text-xl font-semibold text-teal-800 mt-8 mb-4">
+        <h2
+          class="text-lg sm:text-xl font-semibold text-teal-800 mt-6 sm:mt-8 mb-4"
+        >
           Recent Comments
         </h2>
 
         <input
           type="text"
           placeholder="Add a comment..."
-          class="w-full p-2 border border-gray-300 rounded-md mb-4"
+          class="w-full p-2 border border-gray-300 rounded-md mb-4 text-sm sm:text-base"
         />
+        class="w-full p-2 border border-gray-300 rounded-md mb-4 text-sm
+        sm:text-base" />
 
         <div class="space-y-4">
           <div class="border border-gray-200 rounded-lg p-4">
@@ -95,7 +103,7 @@ definePageMeta({ layout: "custom" });
                 </div>
               </div>
             </div>
-            <p class="text-gray-700">
+            <p class="text-sm sm:text-base text-gray-700">
               This is a great announcement! Looking forward to more updates.
             </p>
           </div>
@@ -121,23 +129,23 @@ definePageMeta({ layout: "custom" });
 
         <div>
           <button
-            class="mt-4 w-full px-4 py-2 bg-teal-500 hover:bg-teal-600 text-white rounded-md"
+            class="mt-4 w-full px-4 py-2 bg-teal-500 hover:bg-teal-600 text-white rounded-md text-sm sm:text-base"
           >
             Load More Comments
           </button>
         </div>
       </div>
     </section>
-    <section>
-      <h2 class="text-xl font-semibold text-teal-800">
+    <section class="order-1 md:order-2">
+      <h2 class="text-lg sm:text-xl font-semibold text-teal-800">
         Details of this announcement
       </h2>
       <div class="mt-4">
-        <div class="shadow rounded-lg p-6">
-          <h3 class="text-lg font-semibold text-gray-800 mb-4">
-            Announcement Statistics
+        <div class="shadow rounded-lg p-4 sm:p-6">
+          <h3 class="text-base sm:text-lg font-semibold text-gray-800 mb-4">
+            Announcement Metrics
           </h3>
-          <div class="grid grid-cols-1 gap-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
             <div class="flex items-center justify-between">
               <span class="text-gray-700">Posted on:</span>
               <span class="font-semibold text-gray-900">January 15, 2024</span>
@@ -161,16 +169,6 @@ definePageMeta({ layout: "custom" });
             <div class="flex items-center justify-between">
               <span class="text-gray-700">Tags:</span>
               <span class="font-semibold text-gray-900">Updates, News</span>
-            </div>
-
-            <div class="flex items-center justify-between">
-              <span class="text-gray-700">Comments:</span>
-              <span class="font-semibold text-gray-900">12</span>
-            </div>
-
-            <div class="flex items-center justify-between">
-              <span class="text-gray-700">Likes:</span>
-              <span class="font-semibold text-gray-900">34</span>
             </div>
 
             <div class="flex items-center justify-between">
@@ -214,7 +212,9 @@ definePageMeta({ layout: "custom" });
             </div>
           </div>
 
-          <h3 class="text-lg font-semibold text-gray-800 mt-6 mb-4">
+          <h3
+            class="text-base sm:text-lg font-semibold text-gray-800 mt-6 mb-4"
+          >
             Engagement Metrics
           </h3>
 
@@ -245,6 +245,11 @@ definePageMeta({ layout: "custom" });
             </div>
 
             <div class="flex items-center justify-between">
+              <span class="text-gray-700">Likes:</span>
+              <span class="font-semibold text-gray-900">34</span>
+            </div>
+
+            <div class="flex items-center justify-between">
               <span class="text-gray-700">Average Time Spent:</span>
               <span class="font-semibold text-gray-900">3 mins 45 secs</span>
             </div>
@@ -262,7 +267,9 @@ definePageMeta({ layout: "custom" });
             </div>
           </div>
 
-          <h3 class="text-lg font-semibold text-gray-800 mt-6 mb-4">
+          <h3
+            class="text-base sm:text-lg font-semibold text-gray-800 mt-6 mb-4"
+          >
             User Demographics
           </h3>
           <div class="grid grid-cols-1 gap-4">
@@ -288,7 +295,9 @@ definePageMeta({ layout: "custom" });
             </div>
           </div>
 
-          <h3 class="text-lg font-semibold text-gray-800 mt-6 mb-4">
+          <h3
+            class="text-base sm:text-lg font-semibold text-gray-800 mt-6 mb-4"
+          >
             Device Usage
           </h3>
           <div class="grid grid-cols-1 gap-4">
@@ -313,7 +322,7 @@ definePageMeta({ layout: "custom" });
 
             <div>
               <button
-                class="w-full px-4 py-2 bg-teal-500 hover:bg-teal-600 text-white rounded-md"
+                class="w-full px-4 py-2 bg-teal-500 hover:bg-teal-600 text-white rounded-md text-sm sm:text-base"
               >
                 Export Statistics
               </button>
@@ -321,7 +330,7 @@ definePageMeta({ layout: "custom" });
 
             <div>
               <button
-                class="w-full px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-md"
+                class="w-full px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-md text-sm sm:text-base"
               >
                 View Raw Data
               </button>
