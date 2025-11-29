@@ -77,6 +77,22 @@ definePageMeta({ layout: "custom" });
         <h2
           class="text-lg sm:text-xl font-semibold text-teal-800 mt-6 sm:mt-8 mb-4"
         >
+          Help & Support
+        </h2>
+        <p class="text-gray-700 leading-relaxed">
+          If you need assistance, please visit our
+          <NuxtLink to="/help-center" class="text-teal-600 underline"
+            >Help Center</NuxtLink
+          >
+          or contact our support team at
+        </p>
+        <a href="mailto: support@hackathoninc.com">support@hackathoninc.com</a>
+      </div>
+
+      <div>
+        <h2
+          class="text-lg sm:text-xl font-semibold text-teal-800 mt-6 sm:mt-8 mb-4"
+        >
           Recent Comments
         </h2>
 
@@ -85,8 +101,6 @@ definePageMeta({ layout: "custom" });
           placeholder="Add a comment..."
           class="w-full p-2 border border-gray-300 rounded-md mb-4 text-sm sm:text-base"
         />
-        class="w-full p-2 border border-gray-300 rounded-md mb-4 text-sm
-        sm:text-base" />
 
         <div class="space-y-4">
           <div class="border border-gray-200 rounded-lg p-4">
@@ -338,6 +352,179 @@ definePageMeta({ layout: "custom" });
           </div>
         </div>
       </div>
+
+      <div>
+        <h2
+          class="text-lg sm:text-xl font-semibold text-teal-800 mt-6 sm:mt-8 mb-4"
+        >
+          Share this Announcement
+        </h2>
+        <div class="flex items-center gap-4">
+          <button
+            class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md text-sm sm:text-base"
+          >
+            Share on Facebook
+          </button>
+          <button
+            class="px-4 py-2 bg-blue-400 hover:bg-blue-500 text-white rounded-md text-sm sm:text-base"
+          >
+            Share on X
+          </button>
+          <button
+            class="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-md text-sm sm:text-base"
+          >
+            Share on LinkedIn
+          </button>
+          <button
+            class="px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded-md text-sm sm:text-base"
+          >
+            Whatsapp
+          </button>
+        </div>
+      </div>
+
+      <!-- <div>
+        <h2
+          class="text-lg sm:text-xl font-semibold text-teal-800 mt-6 sm:mt-8 mb-4"
+        >
+          Related Announcements
+        </h2>
+        <ul class="space-y-3">
+          <li>
+            <NuxtLink to="/announcement/1" class="text-teal-600 underline"
+              >Announcement Title 1</NuxtLink
+            >
+          </li>
+          <li>
+            <NuxtLink to="/announcement/2" class="text-teal-600 underline"
+              >Announcement Title 2</NuxtLink
+            >
+          </li>
+          <li>
+            <NuxtLink to="/announcement/3" class="text-teal-600 underline"
+              >Announcement Title 3</NuxtLink
+            >
+          </li>
+        </ul>
+      </div> -->
+
+      <!-- <div>
+        <h2
+          class="text-lg sm:text-xl font-semibold text-teal-800 mt-6 sm:mt-8 mb-4"
+        >
+          Contact Information
+        </h2>
+        <p class="text-gray-700 leading-relaxed">
+          For any inquiries regarding this announcement, please contact us at:
+        </p>
+        <a href="mailto:contact@example.com" class="text-teal-600 underline"
+          >contact@example.com</a
+        >
+      </div> -->
+
+      <!-- <div>
+        <h2
+          class="text-lg sm:text-xl font-semibold text-teal-800 mt-6 sm:mt-8 mb-4"
+        >
+          Tags
+        </h2>
+        <div class="flex flex-wrap gap-2">
+          <span
+            class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm sm:text-base"
+            >Updates</span
+          >
+          <span
+            class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm sm:text-base"
+            >News</span
+          >
+          <span
+            class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm sm:text-base"
+            >Events</span
+          >
+        </div>
+      </div> -->
+
+      <div>
+        <h2
+          class="text-lg sm:text-xl font-semibold text-teal-800 mt-6 sm:mt-8 mb-4"
+        >
+          Report Issue
+        </h2>
+        <button
+          class="w-full px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-md text-sm sm:text-base"
+        >
+          Report an Issue
+        </button>
+      </div>
+
+      <!-- <div>
+        <h2
+          class="text-lg sm:text-xl font-semibold text-teal-800 mt-6 sm:mt-8 mb-4"
+        >
+          Legal Information
+        </h2>
+        <p class="text-gray-700 leading-relaxed">
+          © 2024 Hackathon Inc. All rights reserved. Please read our
+          <NuxtLink to="/privacy-policy" class="text-teal-600 underline"
+            >Privacy Policy</NuxtLink
+          >
+          and
+          <NuxtLink to="/terms-of-service" class="text-teal-600 underline"
+            >Terms of Service</NuxtLink
+          >
+          for more information.
+        </p>
+      </div> -->
+
+      <!-- <div>
+        <h2
+          class="text-lg sm:text-xl font-semibold text-teal-800 mt-6 sm:mt-8 mb-4"
+        >
+          Community Guidelines
+        </h2>
+        <p class="text-gray-700 leading-relaxed">
+          Please adhere to our community guidelines when engaging with this
+          announcement and its comments section. Be respectful, stay on topic,
+          and avoid any inappropriate language or behavior.
+        </p>
+      </div> -->
+
+      <!-- <div>
+        <h2
+          class="text-lg sm:text-xl font-semibold text-teal-800 mt-6 sm:mt-8 mb-4"
+        >
+          Language Options
+        </h2>
+        <select
+          class="w-full p-2 border border-gray-300 rounded-md mb-4 text-sm sm:text-base"
+        >
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+          <option value="fr">French</option>
+          <option value="de">German</option>
+        </select>
+      </div> -->
+
+      <!-- <div>
+        <h2
+          class="text-lg sm:text-xl font-semibold text-teal-800 mt-6 sm:mt-8 mb-4"
+        >
+          Notification Settings
+        </h2>
+        <p class="text-gray-700 leading-relaxed">
+          Manage your notification preferences for this announcement.
+        </p>
+        <div class="flex items-center gap-4 mt-2">
+          <label class="flex items-center gap-2">
+            <input type="checkbox" class="h-4 w-4" checked />
+            Email Notifications
+          </label>
+          <label class="flex items-center gap-2">
+            <input type="checkbox" class="h-4 w-4" checked />
+            SMS Notifications
+          </label>
+        </div>
+      </div> -->
     </section>
   </main>
 </template>
