@@ -2,6 +2,7 @@
 import { ref, onMounted, onUnmounted } from "vue";
 
 const open = ref(false);
+const showNotification = ref(false);
 
 const onKeydown = (e: KeyboardEvent) => {
   if ((e.key === "Escape" || e.key === "Esc") && open.value) {
@@ -24,7 +25,7 @@ onUnmounted(() => {
       <div class="flex items-center justify-between py-3">
         <NuxtLink
           to="/"
-          class="text-2xl font-bold text-teal-500 hover:text-teal-600"
+          class="text-2xl font-bold text-teal-600 hover:text-teal-700"
         >
           megaPh.
         </NuxtLink>
@@ -42,20 +43,24 @@ onUnmounted(() => {
             >Create</NuxtLink
           >
 
-          <NuxtLink
+          <!-- <NuxtLink
             to="/signin"
             class="p-2 rounded-md text-gray-600 hover:text-teal-600"
           >
             <UIcon name="heroicons:cog-8-tooth" class="w-6 h-6" />
-          </NuxtLink>
+          </NuxtLink> -->
           <NuxtLink
-            to="/signin"
+            to="#"
             class="p-2 rounded-md text-gray-600 hover:text-teal-600"
           >
-            <UIcon name="heroicons:bell-alert" class="w-6 h-6" />
+            <UIcon
+              name="heroicons:bell-alert"
+              class="w-6 h-6 relative"
+              @click="showNotification = !showNotification"
+            />
           </NuxtLink>
           <NuxtLink
-            to="/signin"
+            to="/profile"
             class="p-2 rounded-md text-gray-600 hover:text-teal-600"
           >
             <UIcon name="heroicons:user" class="w-6 h-6" />
@@ -67,6 +72,11 @@ onUnmounted(() => {
             >Sign Out</NuxtLink
           >
         </div>
+
+        <Notification
+          v-if="showNotification"
+          class="absolute top-20 right-24 z-10"
+        />
 
         <!-- Mobile menu button -->
         <button

@@ -90,7 +90,7 @@ const submitForm = async (): Promise<void> => {
   <main class="min-h-screen">
     <section class="container mx-auto px-4 py-10">
       <div class="max-w-3xl mx-auto">
-        <div class="bg-white rounded-lg shadow-lg p-8">
+        <div class="bg-white/50 rounded-lg shadow-lg p-8">
           <h1 class="text-3xl font-bold text-teal-600 mb-2">
             Create Announcement
           </h1>
